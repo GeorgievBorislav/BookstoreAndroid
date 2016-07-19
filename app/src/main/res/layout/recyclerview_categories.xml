@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_portrait"
+    android:layout_width="200dp"
+    android:layout_height="300dp"
+    android:elevation="10dp"
+    android:layout_gravity="center"
+    android:background="#ffff66"
+    android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@mipmap/placeholder_v2"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:padding="8dp"
+            android:text="Card Title"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_below="@+id/thumbnail"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="Description"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:id="@+id/info"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>

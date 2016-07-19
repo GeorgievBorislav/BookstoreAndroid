@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_landscape"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/card_padding"
-    android:id="@+id/relLayout"
+    android:layout_marginBottom="1dp"
     android:background="@color/card_background">
 
-    <com.android.volley.toolbox.NetworkImageView
+    <ImageView
         android:id="@+id/thumbnail"
         android:src="@mipmap/ic_launcher"
         android:layout_width="72dip"
@@ -35,21 +37,20 @@
         android:textAppearance="@android:style/TextAppearance.Holo.Small"/>
 
     <TextView
+        android:id="@+id/author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Author"
-        android:id="@+id/author"
         android:layout_alignBottom="@+id/thumbnail"
         android:layout_alignParentEnd="true" />
 
     <TextView
+        android:id="@+id/url"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="URL"
         android:maxLines="0"
-        android:id="@+id/url"
         android:layout_above="@+id/info"
         android:layout_toEndOf="@+id/article_title" />
-
 
 </RelativeLayout>
